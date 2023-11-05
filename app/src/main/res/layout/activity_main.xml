@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="124dp"
+        android:text="Password (required)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInTxt" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="175dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_banner_foreground" />
+
+    <TextView
+        android:id="@+id/signInTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="81dp"
+        android:fontFamily="@font/manjari"
+        android:text="Sign in to your account"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTxt"
+        android:layout_width="296dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInTxt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="29dp"
+        android:text="Email address (required)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInTxt" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTxt"
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotPasswordLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="55dp"
+        android:text="Forgot Password?"
+        android:autoLink="all"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTxt" />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="295dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="55dp"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordLink" />
+
+    <TextView
+        android:id="@+id/separatorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="123dp"
+        android:text="Don't have an account?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInBtn" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="296dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="55dp"
+        android:backgroundTint="#FFFFFF"
+        android:shadowColor="#0B0B0B"
+        android:text="Create a new account"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separatorTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
